@@ -1,18 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+import practice_app.urls
+
+
 # Create your views here.
 def home(request):
-    return HttpResponse('This is home page.')
+    return render(request, 'practice_app/home.html')
 
 def tasks(request):
-    return HttpResponse('This is problem_tasks page.')
+    return render(request, 'practice_app/tasks.html')
 
 def geeksforgeeks(request):
-    return HttpResponse('This is template_filters_from_geeksforgeeks page.')
+    return render(request, 'practice_app/geeksforgeeks.html')
 
 def earthly(request):
-    return HttpResponse('This is template_filters_from_earthly page.')
+    return render(request, 'practice_app/earthly.html')
 
 def navigations(request):
-    return HttpResponse('This is page_navigations page.')
+    return render(request, 'practice_app/navigations.html')
