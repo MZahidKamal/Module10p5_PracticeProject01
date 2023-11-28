@@ -40,6 +40,78 @@
 
 	<h3>Practicing Django Template Filters from Geeksforgeeks:</h3>
 
+	<br><br>
+	<h4>Original: {{ value1 }}</h4>
+	<h4>The 'upper' filter is used: {{ value1 | upper }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value2 }}</h4>
+	<h4>The 'length' filter is used: {{ value2|length }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value3 }}</h4>
+	<h4>The 'add' filter and 50 is used: {{ value3|add:50 }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value4 }}</h4>
+	<h4>The 'addslashes' filter is used: {{ value4|addslashes }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value5 }}</h4>
+	<h4>The 'capfirst' filter is used: {{ value5|capfirst }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value6 }}</h4>
+	<h4>The 'center' filter and 15 is used: {{ value6|center:100 }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value1 }}</h4>
+	<h4>The 'cut' filter and 15 is used: {{ value1|cut:" " }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value7 }}</h4>
+	<h4>The 'date' filter and 15 is used: {{ value7|date:'D d M Y' }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value8 }}</h4>
+	<h4>The 'default' filter is used: {{ value8|default:'empty' }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value9 }}</h4>
+	<h4>The 'dictsort' filter is used: {{ value9|dictsort:'age' }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value10 }}</h4>
+	<h4>The 'divisibleby' filter and 5 is used: {{ value10|divisibleby:5 }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value11 }}</h4>
+	<h4>The 'escape' filter is used: {{ value11|escape }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value12 }}</h4>
+	<h4>The 'filesizeformat' filter is used: {{ value12|filesizeformat }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value2 }}</h4>
+	<h4>The 'first' filter is used: {{ value2|first }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value2 }}</h4>
+	<h4>The 'join' filter and - is used: {{ value2|join:'-' }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value2 }}</h4>
+	<h4>The 'last' filter is used: {{ value2|last }}</h4>
+
+	<br><br>
+	<h4>Original: {{ value2 }}</h4>
+	{% for each in value2 %}
+		<p>{{ each|linenumbers }}</p>
+	{% endfor %}
+
+
+
 
 
 </div>
@@ -55,3 +127,50 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
